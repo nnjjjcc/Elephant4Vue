@@ -1,0 +1,30 @@
+{
+  "name": "@elephant4vue/input",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "vue",
+    "ui",
+    "component library"
+  ],
+  "author": "OrzMiku",
+  "license": "MIT",
+  "scripts": {
+    "build": "vite build"
+  },
+  "main": "./dist/elephant4vue-input.umd.js",
+  "module": "./dist/elephant4vue-input.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/elephant4vue-input.umd.js",
+      "module": "./dist/elephant4vue-input.mjs"
+    }
+  },
+  "types": "",
+  "dependencies": {
+    "@elephant4vue/shared": "workspace:^"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.4"
+  }
+}
