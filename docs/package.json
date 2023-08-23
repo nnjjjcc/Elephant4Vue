@@ -1,0 +1,10 @@
+{
+    "name": "@elephant4vue/docs",
+    "private": true,
+    "scripts": {
+        "dev": "echo dev",
+        "build": "echo build"
+    },
+    "dependencies": {},
+    "devDependencies": {}
+}

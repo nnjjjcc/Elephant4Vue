@@ -1,0 +1,44 @@
+{
+    "name": "@elephant4vue/input",
+    "version": "0.0.0",
+    "description": "",
+    "keywords": [
+        "vue",
+        "ui",
+        "component library"
+    ],
+    "author": "Eli Lee",
+    "license": "MIT",
+    "homepage": "https://github.com/nnjjjcc/Elephant4Vue/tree/lee/README.md",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nnjjjcc/Elephant4Vue.git"
+    },
+    "bugs": {
+        "url": "https://github.com/nnjjjcc/Elephant4Vue/issues"
+    },
+    "scripts": {
+        "build": "echo build",
+        "test": "echo test"
+    },
+    "main": "",
+    "module": "",
+    "types": "",
+    "exports": {
+        ".": {
+            "require": "",
+            "module": "",
+            "types": ""
+        }
+    },
+    "files": [
+        "dist",
+        "README.md"
+    ],
+    "peerDependencies": {
+        "vue": ">=3.0.0"
+    },
+    "dependencies": {
+        "@elephant4vue/shared": "workspace:^"
+    }
+}
