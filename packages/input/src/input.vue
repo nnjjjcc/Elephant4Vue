@@ -1,5 +1,4 @@
 <script setup lang="ts">
-// packages/input/src/input.vue
 import { hello } from '@elephant4vue/shared';
 
 withDefaults(
@@ -23,5 +22,5 @@ function inputHandler(e: any) {
 </script>
 
 <template>
-  <input class="openx-input" type="text" :value="modelValue" @input="inputHandler" />
+  <input class="elephant4vue-input" type="text" :value="modelValue" @input="inputHandler" />
 </template>
