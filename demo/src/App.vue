@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Button, Input } from "@elephant4vue/ui";
+import { Button, Input } from '@elephant4vue/ui';
 </script>
 
 <template>

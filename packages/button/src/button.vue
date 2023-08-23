@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { hello } from "@elephant4vue/shared";
+import { hello } from '@elephant4vue/shared';
 
 const props = withDefaults(
   defineProps<{
     text?: string;
   }>(),
   {
-    text: "World",
-  }
+    text: 'World',
+  },
 );
 
 function clickHandler() {
