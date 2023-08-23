@@ -4,7 +4,8 @@
   "scripts": {
     "build:ui": "pnpm --filter @elephant4vue/ui... build",
     "build:demo": "pnpm --filter elephant4vue-demo build",
-    "dev:demo": "pnpm --filter elephant4vue-demo dev"
+    "dev:demo": "pnpm --filter elephant4vue-demo dev",
+    "format": "prettier --write packages/ demo/"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.3.3",
