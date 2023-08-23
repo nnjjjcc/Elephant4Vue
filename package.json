@@ -3,8 +3,8 @@
   "private": "true",
   "scripts": {
     "build:ui": "pnpm --filter @elephant4vue/ui... build",
-    "build:demo": "pnpm --filter elephant4vue-demo build",
-    "dev:demo": "pnpm --filter elephant4vue-demo dev",
+    "build:demo": "pnpm --filter @elephant4vue/demo build",
+    "dev:demo": "pnpm --filter @elephant4vue/demo dev",
     "format": "prettier --write packages/ demo/"
   },
   "devDependencies": {
