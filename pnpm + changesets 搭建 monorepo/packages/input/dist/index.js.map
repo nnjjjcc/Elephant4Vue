@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sources":["../src/index.js"],"sourcesContent":["import { button } from \"@elephant4vue/button\";\r\nfunction input() {\r\n  button();\r\n  console.log(\"I am input\");\r\n}\r\nexport default input;\r\n"],"names":["button"],"mappings":";;;;;;EACA,SAAS,KAAK,GAAG;EACjB,EAAEA,aAAM,EAAE,CAAC;EACX,EAAE,OAAO,CAAC,GAAG,CAAC,YAAY,CAAC,CAAC;EAC5B;;;;;;;;"}
