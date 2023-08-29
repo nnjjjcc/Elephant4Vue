@@ -1,0 +1,31 @@
+{
+  "name": "@elephant4vue/ui",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "vue",
+    "ui",
+    "component library"
+  ],
+  "author": "OrzMiku",
+  "license": "MIT",
+  "scripts": {
+    "build": "vite build"
+  },
+  "main": "./dist/elephant4vue-ui.umd.js",
+  "module": "./dist/elephant4vue-ui.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/elephant4vue-ui.umd.js",
+      "module": "./dist/elephant4vue-ui.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "dependencies": {
+    "@elephant4vue/input": "workspace:^",
+    "@elephant4vue/button": "workspace:^",
+    "@elephant4vue/shared": "workspace:^"
+  },
+  "peerDependencies": {}
+}

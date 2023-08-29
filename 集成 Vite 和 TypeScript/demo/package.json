@@ -1,0 +1,12 @@
+{
+  "name": "@elephant4vue/demo",
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite dev"
+  },
+  "dependencies": {
+    "@elephant4vue/ui": "workspace:^"
+  },
+  "devDependencies": {}
+}

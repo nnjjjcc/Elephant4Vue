@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    //将目标输出为 ECMAScript 2022 版本
+    "target": "es2022",
+    //编译器将使用 Node.js 的模块解析策略
+    "moduleResolution": "node",
+    // vite 会读取到这个 tsconfig 文件(位于工作空间根目录)，按照其推荐配置这两个选项
+    // https://cn.vitejs.dev/guide/features.html#typescript-compiler-options
+    //编译器每个文件都是单独的模块
+    "isolatedModules": true,
+    //编译器在类字段声明时使用新的定义语法
+    "useDefineForClassFields": true
+  },
+  "files": [],
+  //引用其他的tsconfig.json文件，以构建复杂的项目结构
+  "references": [
+    // 聚合 ts project
+    { "path": "./tsconfig.src.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}

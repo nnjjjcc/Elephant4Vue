@@ -1,0 +1,29 @@
+{
+  "name": "@elephant4vue/shared",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "vue",
+    "ui",
+    "component library"
+  ],
+  "author": "OrzMiku",
+  "license": "MIT",
+  "scripts": {
+    "build": "vite build"
+  },
+  "main": "./dist/elephant4vue-shared.umd.js",
+  "module": "./dist/elephant4vue-shared.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/elephant4vue-shared.umd.js",
+      "module": "./dist/elephant4vue-shared.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "dependencies": {
+    "@types/lodash": "^4.14.197",
+    "lodash": "^4.17.21"
+  }
+}

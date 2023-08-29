@@ -1,0 +1,28 @@
+{
+  "name": "elephant4vue",
+  "private": "true",
+  "scripts": {
+    "clean:type": "rimraf ./dist",
+    "type:node": "tsc -p tsconfig.node.json --noEmit --composite false",
+    "type:src": "pnpm run clean:type && vue-tsc -p tsconfig.src.json --composite false --declaration --emitDeclarationOnly",
+    "build": "vite build",
+    "mv-type": "tsx ./scripts/dts-mv.ts",
+    "build:ui": "pnpm run type:src && pnpm --filter ./packages/** run build && pnpm run mv-type",
+    "build:demo": "pnpm --filter @elephant4vue/demo build",
+    "dev:demo": "pnpm --filter @elephant4vue/demo dev",
+    "format": "prettier --write packages/ demo/"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.6",
+    "@vitejs/plugin-vue": "^4.3.3",
+    "prettier": "^3.0.2",
+    "rimraf": "^5.0.1",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.9",
+    "vue-tsc": "^1.8.8"
+  },
+  "dependencies": {
+    "vue": "^3.3.4"
+  }
+}
