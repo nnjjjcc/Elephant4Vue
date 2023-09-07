@@ -1,5 +1,10 @@
 <template>
-  <input class="elephant4vue-input" type="text" :value="modelValue" @input="inputHandler" />
+  <input
+    class="elephant4vue-input"
+    type="text"
+    :value="modelValue"
+    @input="inputHandler"
+  >
 </template>
 <script setup lang="ts">
 import { hello } from '@elephant4vue/shared';
@@ -18,10 +23,8 @@ const emit = defineEmits<{
 }>();
 
 function inputHandler(e: any) {
-  const value: string = e.target.value;
+  const { value } = e.target;
   emit('update:modelValue', value);
   hello(value);
 }
 </script>
-
-

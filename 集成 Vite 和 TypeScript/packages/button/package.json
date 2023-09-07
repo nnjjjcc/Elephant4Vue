@@ -12,14 +12,14 @@
   "scripts": {
     "build": "vite build"
   },
-  "types": "./dist/index.d.ts",
-  "main": "./dist/elephant4vue-button.umd.js",
-  "module": "./dist/elephant4vue-button.mjs",
+  "types": "./dist/src/index.d.ts",
+  "main": "./dist/elephant-4-vue-button.umd.js",
+  "module": "./dist/elephant-4-vue-button.mjs",
   "exports": {
     ".": {
-      "require": "./dist/elephant4vue-button.umd.js",
-      "module": "./dist/elephant4vue-button.mjs",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/elephant-4-vue-button.umd.js",
+      "import": "./dist/elephant-4-vue-button.mjs",
+      "types": "./dist/src/index.d.ts"
     }
   },
   "dependencies": {
@@ -27,5 +27,8 @@
   },
   "peerDependencies": {
     "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "sass": "^1.66.1"
   }
 }

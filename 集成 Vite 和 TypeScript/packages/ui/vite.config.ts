@@ -1,15 +1,4 @@
 import { defineConfig } from 'vite';
+import { generateVueConfig } from '../build/build.config';
 
-export default defineConfig({
-  build: {
-    lib: {
-      entry: './src/index.ts',
-      name: 'Elephant4VueUi',
-      fileName: 'elephant4vue-ui',
-    },
-    rollupOptions: {
-      external: [/@openxui.*/],
-    },
-    minify: false,
-  },
-});
+export default defineConfig(({ mode }) => generateVueConfig({ mode }));

@@ -10,18 +10,22 @@
   "author": "OrzMiku",
   "license": "MIT",
   "scripts": {
-    "build": "vite build"
+    "build:package": "vite build --mode package",
+    "build:full": "vite build --mode full",
+    "build:full-min": "vite build --mode full-min",
+    "build": "pnpm run build:package && pnpm run build:full && pnpm run build:full-min",
+    "test": "echo test"
   },
-  "main": "./dist/elephant4vue-ui.umd.js",
-  "module": "./dist/elephant4vue-ui.mjs",
+  "main": "./dist/elephant-4-vue-ui.umd.js",
+  "module": "./dist/elephant-4-vue-ui.mjs",
   "exports": {
     ".": {
-      "require": "./dist/elephant4vue-ui.umd.js",
-      "module": "./dist/elephant4vue-ui.mjs",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/elephant-4-vue-ui.umd.js",
+      "import": "./dist/elephant-4-vue-ui.mjs",
+      "types": "./dist/src/index.d.ts"
     }
   },
-  "types": "./dist/index.d.ts",
+  "types": "./dist/src/index.d.ts",
   "dependencies": {
     "@elephant4vue/input": "workspace:^",
     "@elephant4vue/button": "workspace:^",

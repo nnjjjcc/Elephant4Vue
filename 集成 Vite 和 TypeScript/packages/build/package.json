@@ -1,0 +1,44 @@
+{
+  "name": "@elephant4vue/build",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "vue",
+    "ui",
+    "component library"
+  ],
+  "author": "OrzMiku",
+  "license": "MIT",
+  "scripts": {
+    "build": "vite build"
+  },
+  "main": "./dist/elephant-4-vue-build.umd.js",
+  "module": "./dist/elephant-4-vue-build.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/elephant-4-vue-build.umd.js",
+      "import": "./dist/elephant-4-vue-build.mjs",
+      "types": "./dist/src/index.d.ts"
+    }
+  },
+  "types": "./dist/src/index.d.ts",
+  "dependencies": {
+    "@rollup/plugin-replace": "^5.0.2",
+    "@types/lodash": "^4.14.197",
+    "@vitejs/plugin-vue": "^4.3.3",
+    "lodash": "^4.17.21",
+    "rollup-plugin-visualizer": "^5.9.2",
+    "type-fest": "^4.3.1",
+    "typescript": "^5.1.6",
+    "vite-plugin-inspect": "^0.7.38"
+  },
+  "peerDependencies": {
+    "vite": ">=3.0.0",
+    "vue": ">=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "vue": {
+      "optional": true
+    }
+  }
+}
